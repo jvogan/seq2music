@@ -1,6 +1,10 @@
 # Seq2Music
 
-Seq2Music is a local-first Codex plugin for converting biological sequences and structure-derived features into audible, visible, and machine-readable music. It can also decode its self-describing MIDI, PCM WAV, and MusicXML carriers back to normalized protein, DNA, or RNA sequences, and transcribe arbitrary supported audio or scores into a selected sequence alphabet.
+> Turn protein, DNA, and RNA into audible, visible, reversible music—and back again—in Codex.
+
+Seq2Music is a local-first Codex plugin and standalone Python tool for exploring biological sequences through sound and musical notation. It creates synchronized MIDI, WAV, MusicXML, accessible scores, browser playback, and event-level data. Exact carriers decode back to the normalized source sequence; supported audio and scores can also be transcribed into sequences using protein, DNA, or RNA alphabets.
+
+It also renders sequence differences, multiple-sequence alignments, and structure-derived residue traces as coordinated music and visuals—all offline.
 
 ![Seq2Music protein-note logo](plugins/seq2music/assets/seq2music-protein-note-logo.png)
 
