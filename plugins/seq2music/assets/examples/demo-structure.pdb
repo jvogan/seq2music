@@ -1,0 +1,14 @@
+HEADER    SEQ2MUSIC SYNTHETIC TEST STRUCTURE
+ATOM      1  CA  MET A   1       0.000   0.000   0.000  1.00 90.00           C
+ATOM      2  CA  LYS A   2       3.800   0.000   0.000  1.00 88.00           C
+ATOM      3  CA  THR A   3       7.600   0.000   0.000  1.00 86.00           C
+ATOM      4  CA  ALA A   4       7.600   3.800   0.000  1.00 84.00           C
+ATOM      5  CA  TYR A   5       3.800   3.800   0.000  1.00 82.00           C
+ATOM      6  CA  ILE A   6       0.000   3.800   0.000  1.00 80.00           C
+ATOM      7  CA  ALA A   7       0.000   3.800   3.800  1.00 78.00           C
+ATOM      8  CA  LYS A   8       3.800   3.800   3.800  1.00 76.00           C
+ATOM      9  CA  GLN A   9       7.600   3.800   3.800  1.00 74.00           C
+ATOM     10  CA  ARG A  10       7.600   0.000   3.800  1.00 72.00           C
+ATOM     11  CA  GLN A  11       3.800   0.000   3.800  1.00 70.00           C
+ATOM     12  CA  ILE A  12       0.000   0.000   3.800  1.00 68.00           C
+END

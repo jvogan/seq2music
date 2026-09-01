@@ -1,0 +1,10 @@
+cff-version: 1.2.0
+message: "If you use Seq2Music in a project, please cite this software."
+title: "Seq2Music"
+type: software
+authors:
+  - family-names: "Vogan"
+    given-names: "Jacob"
+version: "0.3.1"
+date-released: "2026-08-31"
+license: MIT

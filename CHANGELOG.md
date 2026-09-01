@@ -1,0 +1,10 @@
+# Changelog
+
+## 0.3.1 — 2026-08-31
+
+- Added reversible normalized protein, DNA, and RNA carriers in MIDI, PCM WAV, and MusicXML.
+- Added explicitly lossy transcription from supported arbitrary WAV and MusicXML inputs.
+- Added accessible SVG notation, browser playback pages, CSV ledgers, summaries, and SHA-256 manifests.
+- Added protein-sequence, variant-diff, alignment, and PDB/mmCIF structure rendering modes.
+- Added streamed WAV generation with configurable event, input-memory, and classic-RIFF size budgets.
+- Added a portable Codex marketplace layout, public validation workflow, privacy guidance, and MIT licensing.

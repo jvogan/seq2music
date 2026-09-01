@@ -1,0 +1,38 @@
+{
+  "name": "seq2music",
+  "version": "0.3.1",
+  "description": "Offline biological sequence/music conversion with reversible MIDI, WAV, and MusicXML, accessible score notation, and lossy arbitrary-audio transcription.",
+  "author": {
+    "name": "Jacob Vogan"
+  },
+  "license": "MIT",
+  "keywords": [
+    "bioinformatics",
+    "sonification",
+    "protein",
+    "sequence",
+    "midi"
+  ],
+  "skills": "./skills/",
+  "interface": {
+    "displayName": "Seq2Music",
+    "shortDescription": "Convert sequences, scores, and PCM audio in both directions",
+    "longDescription": "Losslessly round-trips normalized protein, DNA, and RNA through self-describing MIDI, PCM WAV, and MusicXML; draws accessible grand-staff SVG scores; and transparently quantizes arbitrary WAV or MusicXML into a selected sequence alphabet.",
+    "developerName": "Jacob Vogan",
+    "category": "Scientific Research",
+    "capabilities": [
+      "Interactive",
+      "Read",
+      "Write"
+    ],
+    "defaultPrompt": [
+      "Encode this FASTA as reversible music, decode it, and prove the normalized sequence matches.",
+      "Show the musical score and decode this Seq2Music WAV or MusicXML back into FASTA.",
+      "Quantize this PCM WAV into a protein sequence and report its transcription settings."
+    ],
+    "brandColor": "#6D5EF6",
+    "composerIcon": "./assets/seq2music-protein-note-composer.png",
+    "logo": "./assets/seq2music-protein-note-logo.png",
+    "logoDark": "./assets/seq2music-protein-note-logo.png"
+  }
+}

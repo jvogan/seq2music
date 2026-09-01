@@ -1,0 +1,20 @@
+{
+  "name": "seq2music",
+  "interface": {
+    "displayName": "Seq2Music"
+  },
+  "plugins": [
+    {
+      "name": "seq2music",
+      "source": {
+        "source": "local",
+        "path": "./plugins/seq2music"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "Scientific Research"
+    }
+  ]
+}
