@@ -1,6 +1,6 @@
 {
   "name": "seq2music",
-  "version": "0.3.1",
+  "version": "0.3.2",
   "description": "Offline biological sequence/music conversion with reversible MIDI, WAV, and MusicXML, accessible score notation, and lossy arbitrary-audio transcription.",
   "author": {
     "name": "Jacob Vogan"

@@ -38,11 +38,11 @@ MSA mode accepts the extended DNA/RNA IUPAC ambiguity alphabet when `--kind dna`
 
 ## Repository installation
 
-This plugin is distributed through the repository-level Codex marketplace in the public Seq2Music repository. From that repository root:
+This plugin is distributed through the repository-level Codex marketplace in the public Seq2Music repository:
 
 ```bash
-codex plugin marketplace add .
+codex plugin marketplace add jvogan/seq2music --ref v0.3.2
 codex plugin add seq2music@seq2music
 ```
 
-Start a new Codex task after installation so the skill is loaded. The CLI can also be run directly from this plugin directory with Python 3.10 or newer.
+Start a new Codex task after installation so the skill is loaded. For local development from a clone, run `codex plugin marketplace add .` from the repository root. The CLI can also be run directly from this plugin directory with Python 3.10 or newer.

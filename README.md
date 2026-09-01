@@ -21,14 +21,16 @@ It also renders sequence differences, multiple-sequence alignments, and structur
 
 ## Install in Codex
 
-Clone or download this repository, open a terminal in its root, and run:
+Install the tagged GitHub marketplace and then install Seq2Music:
 
 ```bash
-codex plugin marketplace add .
+codex plugin marketplace add jvogan/seq2music --ref v0.3.2
 codex plugin add seq2music@seq2music
 ```
 
 Start a new Codex task after installation so Codex discovers the plugin skill. No account, API key, or network service is required by Seq2Music itself.
+
+For local development from a clone, run `codex plugin marketplace add .` from the repository root instead.
 
 To remove it:
 

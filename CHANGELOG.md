@@ -1,5 +1,11 @@
 # Changelog
 
+## 0.3.2 — 2026-09-01
+
+- Refined the public project description and GitHub installation path.
+- Documented Codex-assisted extraction of audio streams from common audio and video containers.
+- Added the reversible sequence-to-music README banner and its provenance record.
+
 ## 0.3.1 — 2026-08-31
 
 - Added reversible normalized protein, DNA, and RNA carriers in MIDI, PCM WAV, and MusicXML.

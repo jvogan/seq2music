@@ -5,6 +5,7 @@ type: software
 authors:
   - family-names: "Vogan"
     given-names: "Jacob"
-version: "0.3.1"
-date-released: "2026-08-31"
+version: "0.3.2"
+date-released: "2026-09-01"
+repository-code: "https://github.com/jvogan/seq2music"
 license: MIT
