@@ -252,6 +252,13 @@ ATOM 2 C CA . ALA A 1 1 2 3 1 10 1 ALA A CA 1
             with self.assertRaises(ValueError): hj.decode_midi_sequence(midi,manifest)
             self.assertFalse(hj.decode_midi_sequence(midi,manifest,allow_edited=True)["exact"])
 
+    def test_binary_hash_reads_untranslated_carrier_bytes(self):
+        payload=b"MThd\r\n\x1a\x00\xffcarrier"
+        with tempfile.TemporaryDirectory() as td:
+            carrier=Path(td)/"binary.mid"
+            carrier.write_bytes(payload)
+            self.assertEqual(hj.sha256_file(carrier),hj.sha256_bytes(payload))
+
     def test_encode_decode_cli_writes_fixed_safe_outputs(self):
         with tempfile.TemporaryDirectory() as td:
             root=Path(td); source=root/"sample.fasta"; source.write_text(">sample\nMKTAYIAK\n")
@@ -597,7 +604,7 @@ CA ALA A 1 0 0 0
                 self.assertEqual((notation["sequence"],notation["status"],notation["exact"]),(sequence,"exact-score-embedded",True))
                 self.assertEqual(audio["kind_source"],"embedded"); self.assertEqual(notation["kind_source"],"embedded")
                 self.assertTrue(audio["confidence"]["not_applicable"]); self.assertTrue(notation["confidence"]["not_applicable"])
-                svg_text=svg.read_text()
+                svg_text=svg.read_text(encoding="utf-8")
                 self.assertIn("<title>",svg_text); self.assertIn("<desc>",svg_text); self.assertIn('class="staff"',svg_text)
                 manifest=json.loads(next(bundle.glob("*.run.json")).read_text())
                 artifact_names={a["path"] for a in manifest["artifacts"]}

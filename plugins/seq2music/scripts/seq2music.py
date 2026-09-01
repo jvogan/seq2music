@@ -78,7 +78,12 @@ def open_regular_fd(path: Path) -> tuple[int,os.stat_result]:
     preflight=os.lstat(path); reparse=getattr(stat,"FILE_ATTRIBUTE_REPARSE_POINT",0)
     if stat.S_ISLNK(preflight.st_mode) or (reparse and getattr(preflight,"st_file_attributes",0)&reparse):
         raise ValueError(f"input is a symlink, junction, or reparse point: {path}")
-    flags=os.O_RDONLY|getattr(os,"O_CLOEXEC",0)|getattr(os,"O_NOFOLLOW",0)
+    # Windows file descriptors otherwise default to text mode. Hashing or
+    # parsing binary carriers through such a descriptor can translate CRLF
+    # bytes or stop at 0x1A, making a just-written MIDI disagree with its
+    # manifest. O_BINARY is a no-op on platforms that do not define it.
+    flags=(os.O_RDONLY|getattr(os,"O_CLOEXEC",0)|getattr(os,"O_NOFOLLOW",0)
+           |getattr(os,"O_BINARY",0))
     fd=os.open(path,flags)
     try:
         info=os.fstat(fd)

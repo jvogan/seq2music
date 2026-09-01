@@ -5,6 +5,8 @@
 - Refined the public project description and GitHub installation path.
 - Documented Codex-assisted extraction of audio streams from common audio and video containers.
 - Added the reversible sequence-to-music README banner and its provenance record.
+- Fixed binary carrier hashing on Windows and added a cross-platform regression test.
+- Refreshed the GitHub Actions runtime dependencies used by the release matrix.
 
 ## 0.3.1 — 2026-08-31
 
