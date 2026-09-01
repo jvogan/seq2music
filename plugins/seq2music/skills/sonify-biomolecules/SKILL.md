@@ -12,6 +12,7 @@ Seq2Music turns local biological data into deterministic sound, visible notation
 - One FASTA record, default reversible path: `encode` (`sonify` is a compatibility alias and is also reversible).
 - Seq2Music sequence MIDI back to canonical FASTA: `decode`.
 - Seq2Music or arbitrary PCM WAV to FASTA: `audio-decode`.
+- Video or unsupported audio container: use an available local converter such as FFmpeg to extract the requested audio stream as mono or stereo integer PCM WAV, then pass that WAV to `audio-decode`; ignore the video frames.
 - Seq2Music or arbitrary plain MusicXML to FASTA: `score-decode`.
 - Reference and variant FASTA: `diff`.
 - Pre-aligned, equal-length FASTA records: `msa`.

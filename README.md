@@ -12,6 +12,7 @@ It also renders sequence differences, multiple-sequence alignments, and structur
 
 - Lossless normalized-sequence round trips through self-describing MIDI, PCM WAV, and MusicXML.
 - Explicitly lossy transcription from metadata-free PCM WAV and plain MusicXML.
+- Codex-assisted import from common music and video files when a local audio converter is available.
 - Protein, DNA, and RNA alphabets.
 - Audible reference/variant diffs, alignment summaries, and residue-order structure traces.
 - Accessible SVG notation, HTML playback, CSV event ledgers, and SHA-256 manifests.
