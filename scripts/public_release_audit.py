@@ -23,6 +23,8 @@ REQUIRED_FILES = (
     ROOT / "LICENSE",
     ROOT / "PRIVACY.md",
     ROOT / "SECURITY.md",
+    ROOT / "TERMS.md",
+    ROOT / "submission" / "README.md",
     MARKETPLACE,
     MANIFEST,
     PLUGIN / "skills" / "sonify-biomolecules" / "SKILL.md",

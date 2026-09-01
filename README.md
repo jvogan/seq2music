@@ -83,8 +83,8 @@ The release audit checks the portable marketplace layout, manifest assets, commo
 
 Detailed mappings, codec statuses, supported inputs, and scientific references are documented inside the plugin at [`plugins/seq2music/README.md`](plugins/seq2music/README.md) and [`plugins/seq2music/skills/sonify-biomolecules/references/`](plugins/seq2music/skills/sonify-biomolecules/references/).
 
-Release changes are recorded in [CHANGELOG.md](CHANGELOG.md).
+Release changes are recorded in [CHANGELOG.md](CHANGELOG.md). The public [OpenAI Plugins Directory submission packet](submission/README.md) contains the listing copy, starter prompts, and reproducible activation tests.
 
 ## License
 
-MIT © 2026 Jacob Vogan. See [LICENSE](LICENSE).
+MIT © 2026 Jacob Vogan. See [LICENSE](LICENSE). Use of the published plugin is also described in [TERMS.md](TERMS.md).
